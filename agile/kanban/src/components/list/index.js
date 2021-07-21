@@ -17,10 +17,11 @@ export default function List({ data }) {
         </button>
         )}
       </header>
-
+          
     <ul>
-      { data.cards.map(card => <Card key={card.id} data={card} /> )}
+      { data.cards.map((card, index) => <Card key={card.id} index={index} data={card} /> )}
     </ul>
     </Container>
   )
 }
+//index ^
